@@ -1,11 +1,11 @@
 var randomNumber1 = Math.floor(Math.random(0)*6+1);
 var randomNumber2 = Math.floor(Math.random(0)*6+1);
 if(randomNumber1>randomNumber2)
-    document.querySelector("h1").innerHTML="Player 1 wins 🏆";
+    document.querySelector("h1").innerHTML="🏆 Player 1 wins";
 else if(randomNumber1<randomNumber2)
     document.querySelector("h1").innerHTML="Player 2 wins 🏆";
 else
-    document.querySelector("h1").innerHTML="Draw";
+    document.querySelector("h1").innerHTML="🏆 Draw 🏆";
 
 var src1 = "images/dice"+randomNumber1+".png";
 var src2 = "images/dice"+randomNumber2+".png";
