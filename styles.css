@@ -1,3 +1,7 @@
+body {
+  background-color: #FFFAE7 !important;
+}
+
 .container {
   width: 70%;
   margin: auto;
@@ -5,26 +9,27 @@
 }
 
 .dice {
-  text-align: center;
   display: inline-block;
-
 }
 
-body {
-  background-color: #EDDBC0;
+.img{
+  height: 20rem;
+  width: 20rem;
+  margin-bottom: 5%;
 }
 
 h1 {
-  margin: 30px;
   font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
-  font-size: 8rem;
-  color: #DD5353;
+  font-size: 8rem !important;
+  color: #FF5F00;
+  padding-bottom: 20px;
+
 }
 
 p {
   font-size: 2rem;
-  color: #FF731D;
+  color: #FF5F00;
   font-family: 'Indie Flower', cursive;
 }
 
@@ -33,9 +38,18 @@ img {
 }
 
 footer {
-  margin-top: 5%;
-  color: #FF9551;
+  margin-top: 2.5rem;
+  color: #FFDE00;
   text-align: center;
   font-family: 'Indie Flower', cursive;
 
 }
+
+.btn{
+  text-align: center;
+}
+
+.btn-outline-dark:hover{
+  background-color: #FF5F00 !important;
+}
+
