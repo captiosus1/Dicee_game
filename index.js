@@ -1,16 +1,24 @@
-var randomNumber1 = Math.floor(Math.random(0)*6+1);
-var randomNumber2 = Math.floor(Math.random(0)*6+1);
-if(randomNumber1>randomNumber2)
-    document.querySelector("h1").innerHTML="🏆 Player 1 wins";
-else if(randomNumber1<randomNumber2)
-    document.querySelector("h1").innerHTML="Player 2 wins 🏆";
-else
-    document.querySelector("h1").innerHTML="🏆 Draw 🏆";
+document.querySelector(".btn").addEventListener("click",rollDice);
+var audioEffect = new Audio("dice_shake-96201.mp3");
 
-var src1 = "images/dice"+randomNumber1+".png";
-var src2 = "images/dice"+randomNumber2+".png";
-document.querySelector(".img1").setAttribute("src" ,src1);
-document.querySelector(".img2").setAttribute("src" ,src2);
+function rollDice(){
+    audioEffect.play();
+    var randomNumber1 = Math.floor(Math.random(0)*6+1);
+    var randomNumber2 = Math.floor(Math.random(0)*6+1);
+    var src1 = "images/dice"+randomNumber1+".png";
+    var src2 = "images/dice"+randomNumber2+".png";
+
+    setTimeout(function(){
+        if(randomNumber1>randomNumber2)
+        document.querySelector("h1").innerHTML="🏆 Player 1 wins";
+        else if(randomNumber1<randomNumber2)
+            document.querySelector("h1").innerHTML="Player 2 wins 🏆";
+        else
+        document.querySelector("h1").innerHTML="🏆  Draw  🏆";
+        document.querySelector(".img1").setAttribute("src" ,src1);
+        document.querySelector(".img2").setAttribute("src" ,src2);
+    }, 990);  
+}
 
 
 // switch(randomNumber1){
